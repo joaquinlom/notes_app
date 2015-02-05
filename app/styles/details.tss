@@ -1,0 +1,35 @@
+".container" : {
+  backgroundColor: "white",
+},
+"TextField":{
+	color: "black"
+},
+"TextArea":{
+	color: "black"
+}
+"#photo":{
+	top: "40%",
+	height: "40%",
+	backgroundColor:"black"
+},
+"#hint_label":{
+	color:"black",
+	font:{
+		fontSize: 16
+	}
+},
+"#title":{
+	color:"black",
+	top:"5%"
+},
+"#text":{
+	color:"black",
+	top:"10%",
+	height: "20%"
+},
+"#edit":{
+	bottom : 0
+},
+"#hint_photo":{
+	color: "white",
+}

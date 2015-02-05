@@ -1,0 +1,32 @@
+
+"#row" : {
+  height: '70dp',
+  width: Titanium.UI.FILL
+}
+
+"ImageView":{
+	left : 0 ,
+	width: "20%"
+},
+"#title":{
+	font:{
+		fontSize: 16
+	},
+	top: "10%"
+},
+"#label_date":{
+	left:"21%",
+	top:"60%"
+},
+"#date":{
+	font:{
+		fontSize: 12
+	},
+	top:"60%"
+},
+"#borderBottom":{
+	backgroundColor:"black",
+	height: 1,
+	bottom: 0
+	
+}

@@ -1,0 +1,11 @@
+<Alloy>
+ <Collection src="note" />
+  <Window>
+  <LeftNavButton platform="ios">
+                    <Button title="Add" onClick="add_note" />
+         </LeftNavButton>
+   <TableView dataCollection="note" id="notes_view" >
+       <Require src="custom_row"></Require>
+    </TableView>
+    </Window>
+</Alloy>

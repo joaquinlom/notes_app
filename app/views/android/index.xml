@@ -1,0 +1,8 @@
+<Alloy>
+	<Collection src="note" />
+	<Window class="container" id="index">
+		 <TableView dataCollection="note" id="notes_view" >
+    		 <Require src="custom_row"></Require>
+    	</TableView>
+	</Window>
+</Alloy>

@@ -1,0 +1,11 @@
+<Alloy>
+	<Window class="container" id="details">
+		<ImageView id="photo">
+			<Label id="hint_photo" text="Seleccionar Una Imagen" id="hint_label"></Label>
+		</ImageView>
+		<TextField id="title"> </TextField>
+		<TextArea id="text" ></TextArea>
+		<Label id="date"></Label>
+		<Button title="Editar" id="edit"></Button>
+	</Window>
+</Alloy>
