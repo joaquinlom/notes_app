@@ -15,7 +15,7 @@ function createImage(image,name){
 				console.log("Success");
 				
 	}else{
-				alert("no se pudo escribir");
+				console.log("no se pudo escribir");
 		}		
 }
 
