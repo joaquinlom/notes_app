@@ -50,12 +50,14 @@ function save(){
 
 /**
  * Listener para el boton y elegir una imagen de la galeria. 
- */
+ 
 $.select_photo.addEventListener('click',function(e){
 	 var options = {
     success: function(e) {
     	//Callback cuando fue exitoso la seleccion de imagen
-     $.photo_selected.image = e.media;
+    	//Reajustar la imagen para que no haya problema con el tamanio
+    	  var resizedImage = e.media.imageAsResized(1024, 1024);
+     	$.photo_selected.image = resizedImage;
 
     },
     cancel: function() {
@@ -73,7 +75,60 @@ $.select_photo.addEventListener('click',function(e){
   Ti.Media.openPhotoGallery(options);
 });
 
+
+*/
 $.save.addEventListener('click',save);
+$.add_holder.addEventListener("open", function() {
+    if (Ti.Platform.osname === "android") {
+        if (!$.add_holder.activity) {
+            Ti.API.error("Can't access action bar on a lightweight window.");
+        } else {	
+            actionBar = $.add_holder.activity.actionBar;
+           
+        if (actionBar) {
+             actionBar.title = "Nueva Nota";
+             $.add_holder.activity.onCreateOptionsMenu=function(e){
+             var menu = e.menu;
+             
+      		
+      		var picture_add = menu.add({
+      			        title : "Agregar Imagen", 
+                		icon : "images/ic_action_camera.png", 
+                		showAsAction : Ti.Android.SHOW_AS_ACTION_ALWAYS 
+      		});
+      		
+      		picture_add.addEventListener('click',function(e){
+      			 var options = {
+    				success: function(e) {
+      			// fired when user selects from gallery
+      				     var resizedImage = e.media.imageAsResized(1024, 1024);
+     					$.photo_selected.image = resizedImage;
+    				},
+    				cancel: function() {
+      					// fired when user cancels
+    					},
+    				error: function(error) {
+      					// fired when there's an error
+      				// error.code is a constant, like Titanium.Media.NO_CAMERA
+      				console.log(error);
+    				},
+    				allowEditing: true,
+    				mediaTypes: [Ti.Media.MEDIA_TYPE_PHOTO]
+  					};
+  					Ti.Media.openPhotoGallery(options);
+      		});
+      					
+	       };//Se termina la creacion del menu
+                
+                
+          }//If del actionbar
+            
+        }//If si estamos en una ventana heavyweight
+    }//Si estamos en Android
+});
+
+
+
 
 
 function getDate(date) {

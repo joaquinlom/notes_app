@@ -1,31 +1,46 @@
 
 "#row" : {
   height: '70dp',
-  width: Titanium.UI.FILL
+  width: Titanium.UI.FILL,
+  backgroundColor:"transparent"
 }
 
 "ImageView":{
 	left : 0 ,
 	width: "20%"
 },
-"#title":{
+"Label":{
 	font:{
-		fontSize: 16
+		fontSize: 18,
+		color: "white"
 	},
-	top: "10%"
+},
+"#title":{
+	top: "10%",
+	font:{
+		fontSize: 18,
+		color: "white",
+		fontWeight:"bold"
+	},
 },
 "#label_date":{
-	left:"21%",
-	top:"60%"
+	left:"25%",
+	top:"60%",
+	font:{
+		fontSize: 14,
+		color: "white"
+	},
 },
 "#date":{
+	left: "70%",
 	font:{
-		fontSize: 12
+		fontSize: 16,
+		color: "white"
 	},
 	top:"60%"
 },
 "#borderBottom":{
-	backgroundColor:"black",
+	backgroundColor:"white",
 	height: 1,
 	bottom: 0
 	

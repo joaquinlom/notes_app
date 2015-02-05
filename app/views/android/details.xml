@@ -5,7 +5,8 @@
 		</ImageView>
 		<TextField id="title"> </TextField>
 		<TextArea id="text" ></TextArea>
+		<Label id="update_label" text="Ultima Actualizacion:"></Label>
 		<Label id="date"></Label>
-		<Button title="Editar" id="edit"></Button>
+		<Button title="Guardar Edicion" id="edit"></Button>
 	</Window>
 </Alloy>

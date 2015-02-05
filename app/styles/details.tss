@@ -1,15 +1,18 @@
 ".container" : {
   backgroundColor: "white",
+  backgroundImage:"images/chalkboard.png"
 },
 "TextField":{
-	color: "black"
+	color: "white",
+	width: "90%",
 },
 "TextArea":{
-	color: "black"
-}
+	width: "90%",
+	color: "white",
+},
 "#photo":{
 	top: "40%",
-	height: "40%",
+	width: "40%",
 	backgroundColor:"black"
 },
 "#hint_label":{
@@ -19,17 +22,22 @@
 	}
 },
 "#title":{
-	color:"black",
 	top:"5%"
 },
 "#text":{
-	color:"black",
-	top:"10%",
-	height: "20%"
+	top:"20%",
 },
 "#edit":{
 	bottom : 0
 },
 "#hint_photo":{
 	color: "white",
+},
+"#date":{
+	left:"65%",
+	bottom: "10%"
+},
+"#update_label":{
+	left: "10%",
+	bottom: "10%"
 }

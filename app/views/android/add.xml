@@ -2,7 +2,7 @@
 	<Window id="add_holder">
 		<TextField id="title" hintText="Titulo"></TextField>
 		<TextField id="descripction" hintText="Descripcion de la nota..."></TextField>
-		<Button id="select_photo"></Button>
+
 		<ImageView id="photo_selected"></ImageView>
 		
 		<Button id="save"></Button>

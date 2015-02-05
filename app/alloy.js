@@ -10,7 +10,6 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 function createImage(image,name){
-	//Funcion util para crear una imagen  y guardarla, sobreescribiendo la anterior
 	var f = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,name);
 	if(f.write(image,false)){
 				console.log("Success");

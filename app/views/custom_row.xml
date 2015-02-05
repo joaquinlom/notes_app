@@ -2,7 +2,7 @@
  <TableViewRow id="row"> 
  		<ImageView id="image" ></ImageView>
  		<Label id="title" text="{title}" />
- 		<Label id="label_date" text="Actualizado:"></Label>
+ 		<Label id="label_date" text="Ultima actualizacion:"></Label>
  		<Label id="date"></Label>
  		<View id="borderBottom"></View>
  </TableViewRow>  

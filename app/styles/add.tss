@@ -1,19 +1,29 @@
 "#add_holder":{
-	backgroundColor: "white"
+	backgroundColor: "white",
+	backgroundImage: "images/chalkboard.png"
 },
 "TextField":{
-	color: "black",
 	width: "90%",
 	keyboardType: Titanium.UI.KEYBOARD_DEFAULT,
     returnKeyType: Titanium.UI.RETURNKEY_DEFAULT,
     borderStyle: Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+    font:{
+		color: "white"
+	},
 },
 "#title":{
+	width: "90%",
 	top: "10%",
+	font:{
+		fontSize: 18
+	}
 },
 "#descripction":{
 	top: "20%",
-	color: "black"
+	width: "90%",
+    font:{
+		color: "white"
+	},
 },
 "#select_photo":{
 	width: "30%",
@@ -21,9 +31,7 @@
 	title:"Elegir Imagen:"
 },
 "#photo_selected":{
-	left: "35%",
-	width: "30%"
-	
+	width: "60%",
 },
 "#save":{
 	bottom: 0,

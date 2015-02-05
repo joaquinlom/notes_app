@@ -46,15 +46,16 @@ $.edit.addEventListener('click',function(e){
 	
 	createImage(photo_,note.get('photo'));
 	note.set(model);
-
+	alert("Se guardo Exitosamente.");
 });
 
 $.photo.addEventListener('click',function(e){
 	 var options = {
     success: function(e) {
       // fired when user selects from gallery
-      // e.media == the image data
-    $.photo.image = e.media;
+    	//Reajustar la imagen para que no haya problema con el tamanio
+    	  var resizedImage = e.media.imageAsResized(1024, 1024);
+     	$.photo.image = resizedImage;
     },
     cancel: function() {
       // fired when user cancels
@@ -95,7 +96,8 @@ $.details.addEventListener("open", function() {
     				success: function(e) {
       			// fired when user selects from gallery
       				// e.media == the image data
-    				$.photo.image = e.media;
+    				     var resizedImage = e.media.imageAsResized(1024, 1024);
+     					$.photo.image = resizedImage;
     				},
     				cancel: function() {
       					// fired when user cancels

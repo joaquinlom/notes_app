@@ -23,9 +23,9 @@ if ($model) {
 	 
 	 $.date.setText(date);
 	var photo = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,$model.get('photo'));
-	console.log($model.get('photo'));
-	console.log(photo.exists());
-	$.image.setImage(photo.read());
+	
+	//Hacer un thumbnail de la imagen para no renderizar la imagen
+	$.image.setImage(photo.read().imageAsThumbnail(50,2,1));
 	
 
 	 	

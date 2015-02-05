@@ -1,6 +1,9 @@
 ".container": {
-	backgroundColor:"white"
-}
+},
+"#index":{
+	backgroundColor:"transparent",
+	backgroundImage: "images/chalkboard.png"
+},
 
 "Label": {
 	width: Ti.UI.SIZE,
